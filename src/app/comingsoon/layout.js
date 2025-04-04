@@ -13,7 +13,7 @@ export default function ComingSoonLayout({ children }) {
       </head>
       <body>
         <header className="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 py-4">
-          <div className="container mx-auto px-4 flex justify-between items-center">
+          <div className="container mx-auto px-6 flex justify-between items-center">
             <div className="flex items-center">
               <Link href="/">
                 <span className="font-bold text-xl text-green-600">TreeNote</span>
@@ -31,7 +31,7 @@ export default function ComingSoonLayout({ children }) {
         <main>{children}</main>
         
         <footer className="bg-gray-100 py-6 mt-12">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-6">
             <div className="text-center text-gray-500 text-sm">
               &copy; {new Date().getFullYear()} TreeNote. All rights reserved.
             </div>

@@ -26,7 +26,7 @@ export default function ComingSoonSection() {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 shadow-lg border border-green-100 fade-in">
           <div className="text-center mb-8">
             <span className="inline-block px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-full mb-4">
@@ -40,11 +40,11 @@ export default function ComingSoonSection() {
             </p>
           </div>
           
-          <div className="bg-white p-6 rounded-xl shadow-md mb-8">
-            <div className="flex flex-col items-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <div className="bg-white rounded-xl p-6 shadow-md border border-green-100 mb-8">
+            <div className="text-center">
+              <div className="flex items-center justify-center text-green-600 mb-2 text-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a4 4 0 00-4-4H8.8a4 4 0 00-4 4v7H6m6 0v3m0-3h2m-6 0h2" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2 text-gray-800">특별 혜택: 14일 무료 이용권</h3>

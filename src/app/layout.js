@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <header className="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 py-4">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-6">
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <span className="font-bold text-xl text-green-600">TreeNote</span>
@@ -70,7 +70,7 @@ export default function RootLayout({ children }) {
         <main className="pt-20">{children}</main>
         
         <footer className="bg-gray-100 py-8 mt-12">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-center mb-6">
               <div className="flex items-center mb-4 md:mb-0">
                 <span className="font-bold text-xl text-green-600">TreeNote</span>

@@ -10,7 +10,7 @@ export const metadata = {
 export default function ComingSoonPage() {
   return (
     <div className="min-h-screen pt-20 pb-10 flex flex-col">
-      <div className="container mx-auto px-4 mb-10">
+      <div className="container mx-auto px-6 mb-10">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4 text-gray-900">
             <span className="text-green-600">TreeNote</span> 출시 예정
@@ -24,7 +24,7 @@ export default function ComingSoonPage() {
       <ComingSoonSection />
       
       <div className="mt-auto">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-6 text-center">
           <Link 
             href="/" 
             className="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"

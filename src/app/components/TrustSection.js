@@ -26,7 +26,7 @@ export default function TrustSection() {
   
     return (
       <section className="bg-gray-50 py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">
               <span className="text-green-600">TreeNote</span>로 완벽한 학습

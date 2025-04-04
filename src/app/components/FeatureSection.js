@@ -43,7 +43,7 @@ export default function FeatureSection() {
             <div className="absolute top-1/4 right-12 w-16 h-16 border-4 border-green-200 rounded-full opacity-30"></div>
             <div className="absolute bottom-1/4 left-12 w-8 h-8 bg-green-200 rounded-full opacity-30"></div>
             
-            <div className="container mx-auto px-4 relative">
+            <div className="container mx-auto px-6 relative">
                 <div className="text-center mb-16 fade-in">
                     <div className="inline-block relative mb-4">
                         <h2 className="text-3xl font-bold">

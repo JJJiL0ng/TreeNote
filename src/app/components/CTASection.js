@@ -36,7 +36,7 @@ export default function CTASection() {
 
   return (
     <section id="cta" className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6">
         <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-3xl p-8 md:p-12 shadow-xl text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 fade-in">
@@ -69,7 +69,7 @@ export default function CTASection() {
             
             {/* 앱 스토어 배지 */}
             <div className="mt-10 flex justify-center space-x-4 fade-in">
-              <Link href="/comingsoon" className="bg-black text-white py-2 px-4 rounded-lg flex items-center justify-center">
+              <Link href="/comingsoon" className="bg-black text-white py-2 px-4 rounded-lg flex items-center justify-center w-40 h-14">
                 <span className="mr-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5"></path>
@@ -79,11 +79,11 @@ export default function CTASection() {
                 </span>
                 <div className="text-left">
                   <div className="text-xs">다운로드하기</div>
-                  <div className="text-sm font-semibold">App Store</div>
+                  <div className="text-sm font-semibold">Apple Store</div>
                 </div>
               </Link>
               
-              <Link href="/comingsoon" className="bg-black text-white py-2 px-4 rounded-lg flex items-center justify-center">
+              <Link href="/comingsoon" className="bg-black text-white py-2 px-4 rounded-lg flex items-center justify-center w-40 h-14">
                 <span className="mr-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>

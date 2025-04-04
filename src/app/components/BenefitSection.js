@@ -52,8 +52,8 @@ export default function BenefitSection() {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-green-50">
-      <div className="container mx-auto px-4">
+    <section id="benefits" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-3xl font-bold mb-4">
             <span className="text-green-600">TreeNote</span>는 이러한 혜택을 제공해요

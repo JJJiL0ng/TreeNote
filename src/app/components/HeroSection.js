@@ -4,11 +4,12 @@ import Link from 'next/link';
 export default function HeroSection() {
     return (
       <section className="hero-section">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
               더이상 필기하지 마요. <br />
-              <span className="text-green-600">듣기만 해도 완성되는</span> 시험 대비
+              <span className="text-green-600">듣기만 해도 완성되는</span> <br />
+              시험 대비
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 mb-8">
