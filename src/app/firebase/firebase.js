@@ -17,25 +17,62 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// 이메일 저장 함수
-export const saveEmail = async (email) => {
+/**
+ * 주의: Firestore 권한 오류 해결을 위해 Firebase 콘솔에서 보안 규칙을 설정하세요:
+ * 
+ * rules_version = '2';
+ * service cloud.firestore {
+ *   match /databases/{database}/documents {
+ *     match /subscribers/{document=**} {
+ *       allow read, write: if true; // 개발용 설정, 실제 환경에서는 더 제한적인 규칙 필요
+ *     }
+ *   }
+ * }
+ */
+
+// 이메일 또는 전화번호 유효성 검사 함수
+const isValidEmail = (email) => {
+  return email.includes('@');
+};
+
+const isValidPhoneNumber = (phone) => {
+  // 숫자, 하이픈, 괄호, 공백만 허용하고 최소 10자 이상
+  const phoneRegex = /^[\d\s\-()]{10,}$/;
+  return phoneRegex.test(phone);
+};
+
+// 연락처 저장 함수 (이메일 또는 전화번호)
+export const saveContact = async (contact, type) => {
   try {
-    // 이메일 유효성 검사
-    if (!email || !email.includes('@')) {
-      throw new Error('유효한 이메일 주소를 입력해주세요.');
+    // 유효성 검사
+    if (!contact) {
+      throw new Error('연락처 정보를 입력해주세요.');
     }
     
-    // Firestore에 이메일 저장
+    // 타입에 따른 유효성 검사
+    if (type === 'email' && !isValidEmail(contact)) {
+      throw new Error('유효한 이메일 주소를 입력해주세요.');
+    } else if (type === 'phone' && !isValidPhoneNumber(contact)) {
+      throw new Error('유효한 전화번호를 입력해주세요.');
+    }
+    
+    // Firestore에 연락처 정보 저장
     const docRef = await addDoc(collection(db, 'subscribers'), {
-      email,
+      contactType: type,
+      contactValue: contact,
       timestamp: new Date()
     });
     
     return { success: true, id: docRef.id };
   } catch (error) {
-    console.error('이메일 저장 오류:', error);
+    console.error('연락처 저장 오류:', error);
     return { success: false, error: error.message };
   }
+};
+
+// 기존 함수 호환성 유지
+export const saveEmail = async (email) => {
+  return saveContact(email, 'email');
 };
 
 export default app;
