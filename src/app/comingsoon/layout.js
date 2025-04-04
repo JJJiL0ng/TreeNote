@@ -2,16 +2,18 @@
 import '../globals.css';
 import Link from 'next/link';
 import { Analytics } from "@vercel/analytics/react"
+
 export default function ComingSoonLayout({ children }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className="overflow-x-hidden">
       <head>
         <link 
           rel="stylesheet" 
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" 
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
       </head>
-      <body>
+      <body className="overflow-x-hidden w-full">
         <header className="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 py-4">
           <div className="container mx-auto px-6 flex justify-between items-center">
             <div className="flex items-center">

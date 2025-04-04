@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ComingSoonPage() {
   return (
-    <div className="min-h-screen pt-20 pb-10 flex flex-col">
+    <div className="min-h-screen pt-20 pb-10 flex flex-col overflow-x-hidden w-full">
       <div className="container mx-auto px-6 mb-10">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4 text-gray-900">

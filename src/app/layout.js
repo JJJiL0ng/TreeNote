@@ -7,12 +7,12 @@ export const metadata = {
   title: 'TreeNote - 녹음을 통한 효율적인 학습',
   description: '녹음만으로 강의 내용을 자동으로 구조화하고 요약해주는 학습 도구',
   keywords: '학습, 녹음, AI, 노트, 요약, 강의, 시험 대비',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className="overflow-x-hidden">
       <head>
         <link 
           rel="stylesheet" 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         />
         <meta name="theme-color" content="#10b981" />
       </head>
-      <body>
+      <body className="overflow-x-hidden w-full">
         <header className="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 py-4">
           <div className="container mx-auto px-6">
             <div className="flex justify-between items-center">
