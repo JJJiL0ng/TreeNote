@@ -92,18 +92,16 @@ export default function ComingSoonSection() {
           <div className="bg-white rounded-xl p-6 shadow-md border border-green-100 mb-8">
             <div className="text-center">
               <div className="flex items-center justify-center text-green-600 mb-2 text-3xl">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a4 4 0 00-4-4H8.8a4 4 0 00-4 4v7H6m6 0v3m0-3h2m-6 0h2" />
-                </svg>
+                
               </div>
               <h3 className="text-xl font-bold mb-2 text-gray-800">특별 혜택: 14일 무료 이용권</h3>
               <p className="text-gray-600 text-center mb-4">
                 앱이 정식 런칭되면 아래의 쿠폰 번호를 입력하시고 14일 무료 프리미엄 이용권을 받아가세요.
               </p>
               
-              <div className="relative w-full max-w-md">
-                <div className="bg-gray-100 border border-gray-300 rounded-lg p-4 font-mono text-center text-lg mb-2 flex items-center justify-between">
-                  <span className="mx-auto font-semibold tracking-wider text-gray-800">{couponCode}</span>
+              <div className="relative w-full max-w-md mx-auto">
+                <div className="bg-gray-100 border border-gray-300 rounded-lg p-4 font-mono text-center text-lg mb-2 flex items-center justify-center relative">
+                  <span className="font-semibold tracking-wider text-gray-800">{couponCode}</span>
                   <button 
                     onClick={copyCouponCode} 
                     className="absolute right-3 text-gray-500 hover:text-green-600 transition-colors"
