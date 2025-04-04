@@ -1,7 +1,7 @@
 // app/comingsoon/layout.js
 import '../globals.css';
 import Link from 'next/link';
-
+import { Analytics } from "@vercel/analytics/react"
 export default function ComingSoonLayout({ children }) {
   return (
     <html lang="ko">
@@ -37,6 +37,7 @@ export default function ComingSoonLayout({ children }) {
             </div>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 // app/layout.js
 import './globals.css';
 import Link from 'next/link';
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: 'TreeNote - 녹음을 통한 효율적인 학습',
@@ -105,6 +106,7 @@ export default function RootLayout({ children }) {
             })();
           `
         }} />
+        <Analytics />
       </body>
     </html>
   );
