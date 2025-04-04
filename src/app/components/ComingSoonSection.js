@@ -2,13 +2,17 @@
 
 import { useState } from 'react';
 import { useIntersectionObserver } from '../animations';
+import { saveEmail } from '../firebase/firebase';
 
 export default function ComingSoonSection() {
   // 애니메이션 적용
   useIntersectionObserver();
   
-  // 쿠폰 복사 상태 관리
+  // 상태 관리
   const [copied, setCopied] = useState(false);
+  const [email, setEmail] = useState('');
+  const [emailStatus, setEmailStatus] = useState({ message: '', isError: false });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   // 쿠폰 코드
   const couponCode = "thankyou2025";
@@ -22,6 +26,50 @@ export default function ComingSoonSection() {
     setTimeout(() => {
       setCopied(false);
     }, 3000);
+  };
+
+  // 이메일 제출 핸들러
+  const handleSubmitEmail = async (e) => {
+    e.preventDefault();
+    
+    if (!email || !email.includes('@')) {
+      setEmailStatus({ 
+        message: '유효한 이메일 주소를 입력해주세요', 
+        isError: true 
+      });
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    try {
+      const result = await saveEmail(email);
+      
+      if (result.success) {
+        setEmailStatus({ 
+          message: '알림 신청이 완료되었습니다!', 
+          isError: false 
+        });
+        setEmail('');
+      } else {
+        setEmailStatus({ 
+          message: result.error || '알림 신청 중 오류가 발생했습니다', 
+          isError: true 
+        });
+      }
+    } catch (error) {
+      setEmailStatus({ 
+        message: '서버 오류가 발생했습니다. 잠시 후 다시 시도해주세요', 
+        isError: true 
+      });
+    } finally {
+      setIsSubmitting(false);
+      
+      // 3초 후 상태 메시지 제거
+      setTimeout(() => {
+        setEmailStatus({ message: '', isError: false });
+      }, 5000);
+    }
   };
 
   return (
@@ -77,16 +125,28 @@ export default function ComingSoonSection() {
           
           <div className="text-center">
             <h4 className="font-semibold text-gray-800 mb-4">출시 소식을 가장 먼저 받아보세요</h4>
-            <div className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+            <form onSubmit={handleSubmitEmail} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
               <input 
                 type="email" 
                 placeholder="이메일 주소 입력" 
                 className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={isSubmitting}
               />
-              <button className="bg-green-600 text-white font-semibold px-4 py-3 rounded-lg hover:bg-green-700 transition-colors">
-                알림 신청하기
+              <button 
+                type="submit" 
+                className={`bg-green-600 text-white font-semibold px-4 py-3 rounded-lg hover:bg-green-700 transition-colors ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? '처리 중...' : '알림 신청하기'}
               </button>
-            </div>
+            </form>
+            {emailStatus.message && (
+              <p className={`text-sm mt-2 ${emailStatus.isError ? 'text-red-500' : 'text-green-600'}`}>
+                {emailStatus.message}
+              </p>
+            )}
             <p className="text-gray-500 text-sm mt-2">
               개인정보는 안전하게 보호되며, 출시 소식만 발송해 드립니다.
             </p>
