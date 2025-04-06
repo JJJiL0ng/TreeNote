@@ -37,7 +37,7 @@ export default function CTASection() {
   return (
     <section id="cta" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-3xl p-8 md:p-12 shadow-xl text-white">
+        <div className="bg-gradient-to-r from-[#005DE9] to-[#004bb7] rounded-3xl p-8 md:p-12 shadow-xl text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 fade-in">
               강의 녹음의 혁명,<br />지금 시작하세요
@@ -58,7 +58,7 @@ export default function CTASection() {
             </div>
             
             <div className="fade-in">
-              <Link href="/comingsoon" className="bg-white text-green-700 text-lg font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105 transition-transform inline-block text-center flex items-center justify-center">
+              <Link href="/comingsoon" className="bg-white text-[#005DE9] text-lg font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-colors shadow-lg transform hover:scale-105 transition-transform inline-block text-center flex items-center justify-center">
                 지금 무료로 시작하기
               </Link>
               

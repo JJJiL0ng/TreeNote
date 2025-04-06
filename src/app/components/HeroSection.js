@@ -8,7 +8,7 @@ export default function HeroSection() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
               더이상 필기하지 마요. <br />
-              <span className="text-green-600">듣기만 해도 완성되는</span> <br />
+              <span className="text-[#005DE9]">듣기만 해도 완성되는</span> <br />
               시험 대비
             </h1>
             
@@ -21,7 +21,7 @@ export default function HeroSection() {
               <Link href="/comingsoon" className="cta-button text-center flex items-center justify-center">
                 지금 무료로 시작하기
               </Link>
-              <Link href="/comingsoon" className="bg-white border-2 border-green-600 text-green-600 font-semibold py-4 px-8 rounded-full hover:bg-green-50 transition-colors text-center flex items-center justify-center">
+              <Link href="/comingsoon" className="bg-white border-2 border-[#005DE9] text-[#005DE9] font-semibold py-4 px-8 rounded-full hover:bg-blue-50 transition-colors text-center flex items-center justify-center">
                 설치하러 가기
               </Link>
             </div>

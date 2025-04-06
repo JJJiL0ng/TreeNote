@@ -56,7 +56,7 @@ export default function BenefitSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-3xl font-bold mb-4">
-            <span className="text-green-600">TreeNote</span>는 이러한 혜택을 제공해요
+            <span className="text-[#005DE9]">TreeNote</span>는 이러한 혜택을 제공해요
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             단순한 필기 도구를 넘어, 학습 효율과 성적 향상까지 이끄는 TreeNote의 놀라운 혜택들을 확인하세요.
@@ -76,8 +76,8 @@ export default function BenefitSection() {
                   {benefit.stats.map((stat) => (
                     <div key={stat.id} className="bg-white p-4 rounded-lg shadow-sm text-center">
                       <div className="flex items-center justify-center">
-                        <span id={stat.id} className="text-3xl font-bold text-green-600">{stat.value}</span>
-                        <span className="text-xl text-green-600">{stat.unit}</span>
+                        <span id={stat.id} className="text-3xl font-bold text-[#005DE9]">{stat.value}</span>
+                        <span className="text-xl text-[#005DE9]">{stat.unit}</span>
                       </div>
                       <div className="text-gray-500 text-sm mt-1">{stat.label}</div>
                     </div>

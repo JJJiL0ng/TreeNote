@@ -21,12 +21,12 @@ export default function ComingSoonLayout({ children }) {
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
-              <span className="font-bold text-xl text-green-600">TreeNote</span>
+              <span className="font-bold text-xl text-[#005DE9]">TreeNote</span>
             </Link>
           </div>
           <Link 
             href="/" 
-            className="text-gray-600 hover:text-green-600 transition-colors"
+            className="text-gray-600 hover:text-[#005DE9] transition-colors"
           >
             홈페이지
           </Link>

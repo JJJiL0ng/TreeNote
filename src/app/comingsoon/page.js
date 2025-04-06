@@ -13,7 +13,7 @@ export default function ComingSoonPage() {
       <div className="container mx-auto px-6 mb-10">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4 text-gray-900">
-            <span className="text-green-600">TreeNote</span> 출시 예정
+            <span className="text-[#005DE9]">TreeNote</span> 출시 예정
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             녹음을 통한 효율적인 학습의 혁명, TreeNote가 곧 여러분을 찾아갑니다.
@@ -27,7 +27,7 @@ export default function ComingSoonPage() {
         <div className="container mx-auto px-6 text-center">
           <Link 
             href="/" 
-            className="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
+            className="inline-flex items-center text-[#005DE9] hover:text-[#004bb7] transition-colors"
           >
             <svg 
               xmlns="http://www.w3.org/2000/svg" 

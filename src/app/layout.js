@@ -18,14 +18,14 @@ export default function RootLayout({ children }) {
           rel="stylesheet" 
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" 
         />
-        <meta name="theme-color" content="#10b981" />
+        <meta name="theme-color" content="#005DE9" />
       </head>
       <body className="overflow-x-hidden w-full">
         <header className="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 py-4">
           <div className="container mx-auto px-6">
             <div className="flex justify-between items-center">
               <div className="flex items-center">
-                <span className="font-bold text-xl text-green-600">TreeNote</span>
+                <span className="font-bold text-xl text-[#005DE9]">TreeNote</span>
               </div>
               
               {/* 모바일 메뉴 버튼 */}
@@ -39,12 +39,12 @@ export default function RootLayout({ children }) {
               <div className="hidden md:flex items-center justify-between flex-1 ml-10">
                 <nav>
                   <ul className="flex gap-6">
-                    <li><a href="#features" className="hover:text-green-600 transition-colors">기능</a></li>
-                    <li><a href="#benefits" className="hover:text-green-600 transition-colors">혜택</a></li>
-                    <li><a href="#cta" className="hover:text-green-600 transition-colors">시작하기</a></li>
+                    <li><a href="#features" className="hover:text-[#005DE9] transition-colors">기능</a></li>
+                    <li><a href="#benefits" className="hover:text-[#005DE9] transition-colors">혜택</a></li>
+                    <li><a href="#cta" className="hover:text-[#005DE9] transition-colors">시작하기</a></li>
                   </ul>
                 </nav>
-                <Link href="/comingsoon" className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors">
+                <Link href="/comingsoon" className="bg-[#005DE9] text-white px-4 py-2 rounded-full hover:bg-[#004bb7] transition-colors">
                   무료 체험하기
                 </Link>
               </div>
@@ -54,11 +54,11 @@ export default function RootLayout({ children }) {
             <div id="mobileMenu" className="hidden mobile-menu mt-4 pb-2">
               <nav>
                 <ul className="flex flex-col gap-3">
-                  <li><a href="#features" className="block py-2 hover:text-green-600 transition-colors">기능</a></li>
-                  <li><a href="#benefits" className="block py-2 hover:text-green-600 transition-colors">혜택</a></li>
-                  <li><a href="#cta" className="block py-2 hover:text-green-600 transition-colors">시작하기</a></li>
+                  <li><a href="#features" className="block py-2 hover:text-[#005DE9] transition-colors">기능</a></li>
+                  <li><a href="#benefits" className="block py-2 hover:text-[#005DE9] transition-colors">혜택</a></li>
+                  <li><a href="#cta" className="block py-2 hover:text-[#005DE9] transition-colors">시작하기</a></li>
                   <li className="mt-2">
-                    <Link href="/comingsoon" className="w-full bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-colors">
+                    <Link href="/comingsoon" className="w-full bg-[#005DE9] text-white px-4 py-2 rounded-full hover:bg-[#004bb7] transition-colors">
                       무료 체험하기
                     </Link>
                   </li>
@@ -74,12 +74,12 @@ export default function RootLayout({ children }) {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-center mb-6">
               <div className="flex items-center mb-4 md:mb-0">
-                <span className="font-bold text-xl text-green-600">TreeNote</span>
+                <span className="font-bold text-xl text-[#005DE9]">TreeNote</span>
               </div>
               <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
-                <a href="#" className="text-gray-600 hover:text-green-600 transition-colors">이용약관</a>
-                <a href="#" className="text-gray-600 hover:text-green-600 transition-colors">개인정보처리방침</a>
-                <a href="#" className="text-gray-600 hover:text-green-600 transition-colors">고객센터</a>
+                <a href="#" className="text-gray-600 hover:text-[#005DE9] transition-colors">이용약관</a>
+                <a href="#" className="text-gray-600 hover:text-[#005DE9] transition-colors">개인정보처리방침</a>
+                <a href="#" className="text-gray-600 hover:text-[#005DE9] transition-colors">고객센터</a>
               </div>
             </div>
             <div className="text-center text-gray-500 text-sm">
