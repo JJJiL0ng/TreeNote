@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useIntersectionObserver } from '../animations';
 import { saveContact } from '../firebase/firebase';
 
@@ -16,9 +16,8 @@ export default function ComingSoonSection() {
   const [remainingSpots, setRemainingSpots] = useState(50);
   const [isAccessGranted, setIsAccessGranted] = useState(false);
   
-  // 마감 날짜 설정 (현재 날짜로부터 10일 후)
-  const deadline = new Date();
-  deadline.setDate(deadline.getDate() + 10);
+  // 특정 날짜와 시간으로 설정
+  const deadline = useMemo(() => new Date('2025-04-12T00:00:00'), []);
   
   // 날짜 포맷팅 함수
   const formatDate = (date) => {
