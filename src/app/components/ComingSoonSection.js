@@ -264,7 +264,7 @@ export default function ComingSoonSection() {
                     </div>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm">TreeNote로 학습 시간을 40% 줄이면서도 더 효율적으로 공부할 수 있었습니다. 특히 시험 준비에 큰 도움이 되었어요.</p>
+                <p className="text-gray-600 text-sm">Treetion으로 학습 시간을 40% 줄이면서도 더 효율적으로 공부할 수 있었습니다. 특히 시험 준비에 큰 도움이 되었어요.</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                 <div className="flex items-center mb-2">

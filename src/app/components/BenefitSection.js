@@ -56,10 +56,10 @@ export default function BenefitSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-3xl font-bold mb-4">
-            <span className="text-[#005DE9]">TreeNote</span>는 이러한 혜택을 제공해요
+            <span className="text-[#005DE9]">Treetion</span>은 이러한 혜택을 제공해요
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            단순한 필기 도구를 넘어, 학습 효율과 성적 향상까지 이끄는 TreeNote의 놀라운 혜택들을 확인하세요.
+            단순한 필기 도구를 넘어, 학습 효율과 성적 향상까지 이끄는 Treetion의 놀라운 혜택들을 확인하세요.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export default function BenefitSection() {
               </div>
             </div>
             <p className="text-gray-700 italic">
-              TreeNote는 정말 게임 체인저였습니다. 전공 수업에서 복잡한 알고리즘을 설명할 때도 
+              Treetion는 정말 게임 체인저였습니다. 전공 수업에서 복잡한 알고리즘을 설명할 때도 
               완벽하게 필기를 자동화해주어 이해에만 집중할 수 있었습니다. 덕분에 중간고사에서 A+를 받을 수 있었어요!
             </p>
           </div>

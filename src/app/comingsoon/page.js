@@ -4,7 +4,7 @@ import ComingSoonSection from '@/app/components/ComingSoonSection';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'TreeNote - 학습 혁명 | 얼리 액세스 특별 초대',
+  title: 'Treetion - 학습 혁명 | 얼리 액세스 특별 초대',
   description: '단 50명만 초대합니다! 얼리 액세스에 참여하고 베타 테스트, 45일 무료 이용권, 평생 20% 할인 혜택을 모두 받으세요.',
 };
 
@@ -17,7 +17,7 @@ export default function ComingSoonPage() {
             단 50명 선착순 초대
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            <span className="text-[#005DE9]">TreeNote</span> 얼리 액세스
+            <span className="text-[#005DE9]">Treetion</span> 얼리 액세스
           </h1>
           <p className="text-gray-700 max-w-2xl mx-auto text-lg">
             <span className="font-medium">30일 무료 프리미엄 + 20% 할인 혜택</span>을 지금 신청하세요
@@ -70,7 +70,7 @@ export default function ComingSoonPage() {
       <div className="container mx-auto px-6 py-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
-            TreeNote로 <span className="text-[#005DE9]">학습을 혁신</span>하세요
+            Treetion으로 <span className="text-[#005DE9]">학습을 혁신</span>하세요
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -139,7 +139,7 @@ export default function ComingSoonPage() {
         
         <div className="space-y-4">
           <div className="bg-white p-5 rounded-lg shadow-sm">
-            <h3 className="font-semibold text-lg mb-1">TreeNote는 언제 출시되나요?</h3>
+            <h3 className="font-semibold text-lg mb-1">Treetion는 언제 출시되나요?</h3>
             <p className="text-gray-600">2025년 5월 중순에 정식 출시 예정이며, 얼리 액세스 신청자는 4월 중순부터 베타 테스트에 참여하실 수 있습니다.</p>
           </div>
           
@@ -150,7 +150,7 @@ export default function ComingSoonPage() {
           
           <div className="bg-white p-5 rounded-lg shadow-sm">
             <h3 className="font-semibold text-lg mb-1">다른 노트 앱과 무엇이 다른가요?</h3>
-            <p className="text-gray-600">TreeNote는 편리한 필기와 함께 녹음을 통해 동시에 AI가 내용을 정리하고, 지식을 트리 구조로 체계화하여 학습 효율을 높이는 유일한 앱입니다. 복잡한 개념도 명확하게 이해할 수 있습니다.</p>
+            <p className="text-gray-600">Treetion은 편리한 필기와 함께 녹음을 통해 동시에 AI가 내용을 정리하고, 지식을 트리 구조로 체계화하여 학습 효율을 높이는 유일한 앱입니다. 복잡한 개념도 명확하게 이해할 수 있습니다.</p>
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@ export default function ComingSoonPage() {
       <div className="mt-auto">
         <div className="container mx-auto px-6 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
-            <span className="text-gray-500 text-sm">© 2025 TreeNote. All rights reserved.</span>
+            <span className="text-gray-500 text-sm">© 2025 Treetion. All rights reserved.</span>
           </div>
           
           <div className="flex flex-col md:flex-row items-center">

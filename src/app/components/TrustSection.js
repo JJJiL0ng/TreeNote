@@ -4,18 +4,18 @@ export default function TrustSection() {
     const trustPhrases = [
       {
         id: 1,
-        title: "강의는 듣기만 하세요. 필기는 TreeNote가 완성합니다",
-        description: "TreeNote가 녹음된 강의를 텍스트로 변환하고 구조화된 노트로 정리해드립니다."
+        title: "강의는 듣기만 하세요. 필기는 Treetion가 완성합니다",
+        description: "Treetion가 녹음된 강의를 텍스트로 변환하고 구조화된 노트로 정리해드립니다."
       },
       {
         id: 2, 
         title: "녹음 한 번으로 완성되는 완벽한 학습 노트",
-        description: "강의를 듣는 동안 녹음만 하세요. 나머지는 TreeNote가 모두 처리합니다."
+        description: "강의를 듣는 동안 녹음만 하세요. 나머지는 Treetion가 모두 처리합니다."
       },
       {
         id: 3,
-        title: "시험기간의 새로운 비밀 무기, TreeNote",
-        description: "이미 10,000명 이상의 학생들이 시험 대비에 TreeNote를 활용하고 있습니다."
+        title: "시험기간의 새로운 비밀 무기, Treetion",
+        description: "이미 10,000명 이상의 학생들이 시험 대비에 Treetion를 활용하고 있습니다."
       },
       {
         id: 4,
@@ -29,10 +29,10 @@ export default function TrustSection() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">
-              <span className="text-[#005DE9]">TreeNote</span>로 완벽한 학습
+              <span className="text-[#005DE9]">Treetion</span>로 완벽한 학습
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              학생들이 직접 경험하고 검증한 혁신적인 학습 도구, TreeNote가 학습 효율을 높이는 방법을 알아봐요.
+              학생들이 직접 경험하고 검증한 혁신적인 학습 도구, Treetion이 학습 효율을 높이는 방법을 알아봐요.
             </p>
           </div>
   

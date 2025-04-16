@@ -47,12 +47,12 @@ export default function FeatureSection() {
                 <div className="text-center mb-16 fade-in">
                     <div className="inline-block relative mb-4">
                         <h2 className="text-3xl font-bold">
-                            <span className="text-[#005DE9]">TreeNote</span>의 강력한 기능
+                            <span className="text-[#005DE9]">Treetion</span>의 강력한 기능
                         </h2>
                         <div className="h-1 w-24 bg-[#005DE9] mx-auto mt-2 rounded-full"></div>
                     </div>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        강의 필기의 혁명, TreeNote만의 특별한 기능들을 살펴보아요.
+                        강의 필기의 혁명, Treetion만의 특별한 기능들을 살펴보아요.
                     </p>
                 </div>
 
@@ -90,7 +90,7 @@ export default function FeatureSection() {
                             <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
                             <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
                             <div className="w-3 h-3 rounded-full bg-[#005DE9]"></div>
-                            <div className="ml-4 text-gray-600 font-medium">TreeNote 실시간 변환 데모</div>
+                            <div className="ml-4 text-gray-600 font-medium">Treetion 실시간 변환 데모</div>
                         </div>
                         <div className="bg-gray-900 p-6 rounded-lg font-mono text-sm relative z-10">
                             <div className="text-blue-400 mb-2"># 녹음 중...</div>

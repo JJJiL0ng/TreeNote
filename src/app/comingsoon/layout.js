@@ -13,7 +13,7 @@ const notoSansKr = Noto_Sans_KR({
 export const metadata = {
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
 };
-
+  
 export default function ComingSoonLayout({ children }) {
   return (
     <div className={`${notoSansKr.className} overflow-x-hidden w-full`}>
@@ -21,7 +21,7 @@ export default function ComingSoonLayout({ children }) {
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
-              <span className="font-bold text-xl text-[#005DE9]">TreeNote</span>
+              <span className="font-bold text-xl text-[#005DE9]">Treetion</span>
             </Link>
           </div>
           <Link 
@@ -38,7 +38,7 @@ export default function ComingSoonLayout({ children }) {
       <footer className="bg-gray-100 py-6 mt-12">
         <div className="container mx-auto px-6">
           <div className="text-center text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} TreeNote. All rights reserved.
+            &copy; {new Date().getFullYear()} Treetion. All rights reserved.
           </div>
         </div>
       </footer>
