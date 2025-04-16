@@ -29,7 +29,7 @@ export default function TrustSection() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">
-              <span className="text-[#005DE9]">Treetion</span>로 완벽한 학습
+              <span className="text-[#005DE9]">Treetion</span>으로 완벽한 학습
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               학생들이 직접 경험하고 검증한 혁신적인 학습 도구, Treetion이 학습 효율을 높이는 방법을 알아봐요.

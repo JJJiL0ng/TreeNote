@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
-  title: 'TreeNote - 녹음을 통한 효율적인 학습',
+  title: 'Treetion - 녹음을 통한 효율적인 학습',
   description: '녹음만으로 강의 내용을 자동으로 구조화하고 요약해주는 학습 도구',
   keywords: '학습, 녹음, AI, 노트, 요약, 강의, 시험 대비',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           <div className="container mx-auto px-6">
             <div className="flex justify-between items-center">
               <div className="flex items-center">
-                <span className="font-bold text-xl text-[#005DE9]">TreeNote</span>
+                <span className="font-bold text-xl text-[#005DE9]">Treetion</span>
               </div>
               
               {/* 모바일 메뉴 버튼 */}
@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-center mb-6">
               <div className="flex items-center mb-4 md:mb-0">
-                <span className="font-bold text-xl text-[#005DE9]">TreeNote</span>
+                <span className="font-bold text-xl text-[#005DE9]">Treetion</span>
               </div>
               <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
                 <a href="#" className="text-gray-600 hover:text-[#005DE9] transition-colors">이용약관</a>
@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
             <div className="text-center text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} TreeNote. All rights reserved.
+              &copy; {new Date().getFullYear()} Treetion. All rights reserved.
             </div>
           </div>
         </footer>

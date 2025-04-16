@@ -17,7 +17,7 @@ export default function ComingSoonSection() {
   const [isAccessGranted, setIsAccessGranted] = useState(false);
   
   // 특정 날짜와 시간으로 설정
-  const deadline = useMemo(() => new Date('2025-04-12T00:00:00'), []);
+  const deadline = useMemo(() => new Date('2025-04-20T00:00:00'), []);
   
   // 날짜 포맷팅 함수
   const formatDate = (date) => {
