@@ -24,12 +24,12 @@ export default function ComingSoonLayout({ children }) {
               <span className="font-bold text-xl text-[#005DE9]">Treetion</span>
             </Link>
           </div>
-          <Link 
+          {/* <Link 
             href="/" 
             className="text-gray-600 hover:text-[#005DE9] transition-colors"
           >
             홈페이지
-          </Link>
+          </Link> */}
         </div>
       </header>
       

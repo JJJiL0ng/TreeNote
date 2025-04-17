@@ -135,7 +135,7 @@ export default function ComingSoonSection() {
               얼리 액세스 신청
             </span>
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              TreeNote <span className="text-[#005DE9]">얼리 액세스</span> <br />특별 초대
+              Treetion <span className="text-[#005DE9]">얼리 액세스</span> <br />특별 초대
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               단 <span className="font-bold text-[#005DE9]">{remainingSpots}명</span>만 선착순 초대합니다! 이메일을 남기시면 다음 혜택을 모두 받으실 수 있습니다.
@@ -205,6 +205,26 @@ export default function ComingSoonSection() {
               개인정보는 안전하게 보호되며, 마케팅 목적으로 사용되지 않습니다.
             </p>
           </div>
+          
+          {/* 설문 작성 및 커피쿠폰 받기 섹션 */}
+          {isAccessGranted && (
+            <div className="bg-white rounded-xl p-6 shadow-md border border-blue-100 mb-8">
+              <div className="text-center">
+                <h3 className="text-xl font-bold mb-2 text-gray-800">설문 작성하고 커피쿠폰 받기</h3>
+                <p className="text-gray-600 text-center mb-4">
+                  설문을 작성하시면 커피쿠폰을 받으실 수 있습니다.
+                </p>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScP40JH2BHsCDm7Gf4lRupfeRMTlyWjCEMg3HVLyqASUhtf8Q/viewform?usp=dialog" 
+                  className="bg-[#005DE9] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#004bb7] transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  설문 작성하기
+                </a>
+              </div>
+            </div>
+          )}
           
           {/* 프리미엄 쿠폰 섹션 (하단으로 이동) */}
           <div className="bg-gradient-to-r from-indigo-100 to-purple-100 rounded-xl p-6 shadow-md border border-indigo-200 mb-8">
